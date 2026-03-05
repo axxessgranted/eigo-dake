@@ -4,6 +4,8 @@ A fun, interactive English word explanation game for Japanese learners. Players 
 
 Perfect for ESL/EFL classrooms, language clubs, and group study sessions!
 
+Live at: https://axxessgranted.github.io/eigo-dake !
+
 ![Eigo Dake Game](https://img.shields.io/badge/Made%20with-React-blue?style=flat-square)
 ![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)
 
@@ -32,14 +34,17 @@ Perfect for ESL/EFL classrooms, language clubs, and group study sessions!
 ## 🚀 Quick Start
 
 ### Online (Easiest)
+
 Visit the live game: `https://YOUR_USERNAME.github.io/eigo-darke`
 
 ### Local Development
 
 **Requirements:**
+
 - Node.js 14+ and npm
 
 **Setup:**
+
 ```bash
 # Clone the repository
 git clone https://github.com/YOUR_USERNAME/eigo-darke.git
@@ -59,16 +64,19 @@ The app will open at `http://localhost:3000`
 ### Deploy to GitHub Pages
 
 1. **Update homepage** in `package.json`:
+
    ```json
    "homepage": "https://YOUR_USERNAME.github.io/eigo-darke"
    ```
 
 2. **Install gh-pages**:
+
    ```bash
    npm install --save-dev gh-pages
    ```
 
 3. **Deploy**:
+
    ```bash
    npm run deploy
    ```
@@ -83,6 +91,7 @@ The app will open at `http://localhost:3000`
 ## 📚 Word Database
 
 ### Built-in Categories
+
 - Animals (10 words)
 - Nature (15 words)
 - Objects (15 words)
@@ -135,24 +144,29 @@ The app will open at `http://localhost:3000`
 ## 🛠️ Customization
 
 ### Change Colors/Theme
+
 Edit `src/App.jsx` and look for gradient classes like:
+
 ```jsx
-className="bg-gradient-to-r from-blue-600 to-indigo-600"
+className = "bg-gradient-to-r from-blue-600 to-indigo-600";
 ```
 
 ### Add More Words
+
 Edit `WORD_DATABASE` in `src/App.jsx`:
+
 ```javascript
-{ 
-  word: '日本', 
-  furigana: 'にほん', 
-  ngWords: ['country', 'asia', 'east'], 
-  category: 'places', 
-  difficulty: 'easy' 
+{
+  word: '日本',
+  furigana: 'にほん',
+  ngWords: ['country', 'asia', 'east'],
+  category: 'places',
+  difficulty: 'easy'
 }
 ```
 
 ### Adjust Game Settings
+
 - Change default timer duration in `useState(60)`
 - Modify round options in `SettingsScreen`
 - Update max players in player setup UI
@@ -160,13 +174,15 @@ Edit `WORD_DATABASE` in `src/App.jsx`:
 ## 📱 Responsive Design
 
 Works great on:
+
 - 🖥️ Desktop browsers
 - 📱 Tablets
 - 📱 Mobile phones
 
 ## 🤝 Contributing
 
-Want to add more words or features? 
+Want to add more words or features?
+
 1. Fork the repo
 2. Create a feature branch
 3. Make your changes
@@ -179,6 +195,7 @@ MIT License - feel free to use for education and commercial purposes
 ## 🙋 Support
 
 Have questions? Found a bug?
+
 - Open an issue on GitHub
 - Check existing issues for solutions
 
