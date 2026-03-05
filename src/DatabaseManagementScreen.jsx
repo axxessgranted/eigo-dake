@@ -21,7 +21,7 @@ export const DatabaseManagementScreen = ({ onBack }) => {
       try {
         const imported = JSON.parse(event.target?.result || "[]");
         if (Array.isArray(imported)) {
-          // Note: In a real app, you'd update WORD_DATABASE here
+          // TODO: For future, update WORD_DATABASE here
           alert(`Successfully imported ${imported.length} words!`);
         }
       } catch (error) {
