@@ -1,7 +1,7 @@
 {
   "name": "eigo-dake",
   "version": "1.0.0",
-  "description": "Japanese word explanation game for English learners - Eigo Darke",
+  "description": "Japanese word explanation game for English learners - Eigo Dake",
   "private": true,
   "homepage": "https://axxessgranted.github.io/eigo-dake",
   "dependencies": {
