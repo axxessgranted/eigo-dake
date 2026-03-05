@@ -1,13 +1,5 @@
 import React, { useState, useEffect } from "react";
-import {
-  RotateCcw,
-  Play,
-  Settings,
-  Users,
-  Trophy,
-  Clock,
-  Volume2,
-} from "lucide-react";
+import { RotateCcw, Play, Settings, Trophy } from "lucide-react";
 import { WORD_DATABASE } from "./consts";
 
 export default function EigoDakeApp() {
