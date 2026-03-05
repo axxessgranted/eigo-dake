@@ -1,4 +1,4 @@
-# 英語ダーク - Eigo Darke
+# 英語ダーク - Eigo Dake
 
 A fun, interactive English word explanation game for Japanese learners. Players explain Japanese words in English without using forbidden words (NG words), and other players try to guess what they're explaining.
 
