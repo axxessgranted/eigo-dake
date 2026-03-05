@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/eigo-dake/static/css/main.3c7c89d2.css",
+    "main.js": "/eigo-dake/static/js/main.61d611d8.js",
+    "index.html": "/eigo-dake/index.html",
+    "main.3c7c89d2.css.map": "/eigo-dake/static/css/main.3c7c89d2.css.map",
+    "main.61d611d8.js.map": "/eigo-dake/static/js/main.61d611d8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3c7c89d2.css",
+    "static/js/main.61d611d8.js"
+  ]
+}
