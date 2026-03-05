@@ -33,60 +33,11 @@ Live at: https://axxessgranted.github.io/eigo-dake !
 
 ## 🚀 Quick Start
 
-### Online (Easiest)
-
-Visit the live game: `https://YOUR_USERNAME.github.io/eigo-darke`
-
 ### Local Development
 
 **Requirements:**
 
 - Node.js 14+ and npm
-
-**Setup:**
-
-```bash
-# Clone the repository
-git clone https://github.com/YOUR_USERNAME/eigo-darke.git
-cd eigo-darke
-
-# Install dependencies
-npm install
-
-# Start development server
-npm start
-```
-
-The app will open at `http://localhost:3000`
-
-## 📦 Deployment
-
-### Deploy to GitHub Pages
-
-1. **Update homepage** in `package.json`:
-
-   ```json
-   "homepage": "https://YOUR_USERNAME.github.io/eigo-darke"
-   ```
-
-2. **Install gh-pages**:
-
-   ```bash
-   npm install --save-dev gh-pages
-   ```
-
-3. **Deploy**:
-
-   ```bash
-   npm run deploy
-   ```
-
-4. **Enable GitHub Pages**:
-   - Go to repo Settings → Pages
-   - Select "gh-pages" branch as source
-   - Save
-
-5. **Your game is live!** Share the link: `https://YOUR_USERNAME.github.io/eigo-darke`
 
 ## 📚 Word Database
 
