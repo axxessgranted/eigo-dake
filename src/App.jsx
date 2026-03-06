@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 
 import { RoundEndScreen } from "./components/RoundEndScreen";
 import { GameEndScreen } from "./components/GameEndScreen";
@@ -22,6 +22,32 @@ export default function EigoDakeApp() {
   const [gameRounds, setGameRounds] = useState(3);
   const [currentRound, setCurrentRound] = useState(0);
 
+  const awardPoints = useCallback(
+    (playerIndex, points) => {
+      const newPlayers = [...players];
+
+      if (points > 0) {
+        // Someone guessed correctly - both explainer and guesser get a point
+        newPlayers[currentPlayerIndex].score += 1;
+        newPlayers[playerIndex].score += 1;
+        setRoundPoints(1);
+        setPointsRecipientIndex(playerIndex);
+      } else {
+        // Nobody understood or skipped - nobody gets points
+        setRoundPoints(0);
+        setPointsRecipientIndex(currentPlayerIndex);
+      }
+
+      setPlayers(newPlayers);
+      setGameState("roundEnd");
+    },
+    [currentPlayerIndex, players],
+  );
+
+  const handleSkipWord = useCallback(() => {
+    awardPoints(currentPlayerIndex, 0);
+  }, [currentPlayerIndex, awardPoints]);
+
   // Timer effect
   useEffect(() => {
     let interval;
@@ -31,7 +57,7 @@ export default function EigoDakeApp() {
       handleSkipWord();
     }
     return () => clearInterval(interval);
-  }, [gameState, timerEnabled, timeLeft]);
+  }, [gameState, timerEnabled, timeLeft, handleSkipWord]);
 
   const getNextWord = () => {
     let newIndex;
@@ -64,25 +90,6 @@ export default function EigoDakeApp() {
     setGameState("playing");
   };
 
-  const awardPoints = (playerIndex, points) => {
-    const newPlayers = [...players];
-
-    if (points > 0) {
-      // Someone guessed correctly - both explainer and guesser get a point
-      newPlayers[currentPlayerIndex].score += 1;
-      newPlayers[playerIndex].score += 1;
-      setRoundPoints(1);
-      setPointsRecipientIndex(playerIndex);
-    } else {
-      // Nobody understood or skipped - nobody gets points
-      setRoundPoints(0);
-      setPointsRecipientIndex(currentPlayerIndex);
-    }
-
-    setPlayers(newPlayers);
-    setGameState("roundEnd");
-  };
-
   const nextTurn = () => {
     const nextIndex = (currentPlayerIndex + 1) % players.length;
 
@@ -104,10 +111,6 @@ export default function EigoDakeApp() {
       setTimeLeft(timerSeconds);
       setGameState("playing");
     }
-  };
-
-  const handleSkipWord = () => {
-    awardPoints(currentPlayerIndex, 0);
   };
 
   const resetGame = () => {
