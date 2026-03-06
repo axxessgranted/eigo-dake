@@ -1,11 +1,11 @@
 import { useState, useEffect } from "react";
 
-import { RoundEndScreen } from "./RoundEndScreen";
-import { GameEndScreen } from "./GameEndScreen";
-import { SetupScreen } from "./SetupScreen";
-import { SettingsScreen } from "./SettingsScreen";
-import { PlayingScreen } from "./PlayingScreen";
-import { DatabaseManagementScreen } from "./DatabaseManagementScreen";
+import { RoundEndScreen } from "./components/RoundEndScreen";
+import { GameEndScreen } from "./components/GameEndScreen";
+import { SetupScreen } from "./components/SetupScreen";
+import { SettingsScreen } from "./components/SettingsScreen";
+import { PlayingScreen } from "./components/PlayingScreen";
+import { DatabaseManagementScreen } from "./components/DatabaseManagementScreen";
 import { WORD_DATABASE } from "./consts";
 
 export default function EigoDakeApp() {

@@ -1,4 +1,4 @@
-import { WORD_DATABASE } from "./consts";
+import { WORD_DATABASE } from "../consts";
 
 export const DatabaseManagementScreen = ({ onBack }) => {
   const exportDatabase = () => {
