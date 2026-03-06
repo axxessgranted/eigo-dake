@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/eigo-dake/static/css/main.3c7c89d2.css",
-    "main.js": "/eigo-dake/static/js/main.126c1071.js",
+    "main.js": "/eigo-dake/static/js/main.e8700a9b.js",
     "index.html": "/eigo-dake/index.html",
     "main.3c7c89d2.css.map": "/eigo-dake/static/css/main.3c7c89d2.css.map",
-    "main.126c1071.js.map": "/eigo-dake/static/js/main.126c1071.js.map"
+    "main.e8700a9b.js.map": "/eigo-dake/static/js/main.e8700a9b.js.map"
   },
   "entrypoints": [
     "static/css/main.3c7c89d2.css",
-    "static/js/main.126c1071.js"
+    "static/js/main.e8700a9b.js"
   ]
 }
